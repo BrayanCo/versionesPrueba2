@@ -26,7 +26,12 @@ public class holaComoEstas {
 			--age;
 		}
 		return age;
-		}
+	}
+
+	public int determinateAge2(int bornDay, int bornMonth, int bornYear){
+		LocalDate born = LocalDate.of(bornYear, bornMonthm, bornDay);
+		return Period.beetween(born, LocalDate.now()).getYears;
+	}
 
  public static void main(String[] args) {
 	System.out.println(new holaComoEstas().areaCirculo(10));
